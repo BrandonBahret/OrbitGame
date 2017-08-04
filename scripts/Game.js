@@ -72,7 +72,7 @@ function Game(){
     var d = dist(target.x, target.y, player.x, player.y);
     if(d<playerRadius){
       target = newTarget();
-      document.getElementById("score").textContent  = "Score: " + ++score;
+      document.getElementById("score").textContent  = "Score: " + (++score);
     }
   }
 
@@ -110,7 +110,7 @@ function Game(){
     drawEntity(target);
 
     if(!player.isAlive){
-      textSize(60);
+      textSize(0.12 * canvas.width);
       fill("rgba(67, 87, 97, .87)");
       rect(0, height/3, width, height/4);
 

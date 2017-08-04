@@ -8,7 +8,7 @@ function setup() {
   var domElement;
   domElement = document.getElementById("sketch-holder");
   sketchHolder = new p5.Element(domElement);
-  var canvasHeight = min(sketchHolder.height * 0.50, sketchHolder.width);
+  var canvasHeight = min(sketchHolder.height * 0.58, sketchHolder.width);
   canvas = createCanvas(sketchHolder.width, canvasHeight);
   canvas.parent("canvas-place");
   game = new Game();
@@ -41,7 +41,7 @@ function keyPressed(){
 function windowResized() {
   sketchHolder = document.getElementById("sketch-holder");
   sketchHolder = new p5.Element(sketchHolder);
-  var canvasHeight = min(sketchHolder.height * 0.50, sketchHolder.width);
+  var canvasHeight = min(sketchHolder.height * 0.58, sketchHolder.width);
   resizeCanvas(sketchHolder.width, canvasHeight);
 }
 
